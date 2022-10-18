@@ -15,4 +15,4 @@ jobs:
         env:
           TEST: abc
         run: |
-          echo "$TEST"
+          echo "$EXECUTED_PYTHON"
