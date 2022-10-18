@@ -15,4 +15,4 @@ jobs:
         env:
           TEST: abc
         run: |
-          echo "$(cat $GITHUB_ENV)"
+          echo "$TEST"
