@@ -12,5 +12,7 @@ jobs:
 
     steps:
       - name: Read environment variables
+        env:
+          TEST: abc
         run: |
           echo "$(cat $GITHUB_ENV)"
