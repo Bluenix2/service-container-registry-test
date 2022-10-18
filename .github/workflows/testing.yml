@@ -34,7 +34,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          cache-from: type=registry,ref=ghcr.io/Bluenix2/service-container-registry-test
+          cache-from: type=registry,ref=ghcr.io/bluenix2/service-container-registry-test
           cache-to: type=inline
           tags: |
-            ghcr.io/Bluenix2/service-container-registry-test
+            ghcr.io/bluenix2/service-container-registry-test
