@@ -1,0 +1,16 @@
+name: Testing
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    services:
+      testing:
+        image: ghcr.io/Bluenix2/service-container-registry-test
+
+    steps:
+      - name: Read environment variables
+        run: |
+          echo "$(cat $GITHUB_ENV)"
