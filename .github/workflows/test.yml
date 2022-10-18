@@ -8,7 +8,7 @@ jobs:
 
     services:
       testing:
-        image: ghcr.io/Bluenix2/service-container-registry-test
+        image: ghcr.io/bluenix2/service-container-registry-test
 
     steps:
       - name: Read environment variables
