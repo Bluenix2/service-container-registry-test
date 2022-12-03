@@ -1,9 +1,4 @@
-import os
+import httpx
 
-print(os.environ)
-
-try:
-  with open(os.environ['GITHUB_ENV'], 'a') as f:
-    f.write('EXECUTED_PYTHON=true')
-except Exception as e:
-  print(e)
+res = httpx.get('litecord/api/v9/users/@me', headers={'Authorization': 'Bot ADMIN_TOKEN'})
+print(res.json())
