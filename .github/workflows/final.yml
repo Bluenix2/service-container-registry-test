@@ -15,7 +15,7 @@ jobs:
           POSTGRES_PASSWORD: postgres
 
       litecord:
-        image: ghcr.io/wumpyproject/litecord-docker-service
+        image: ghcr.io/wumpyproject/litecord-docker-service:main
         env:
           LITECORD_HOSTNAME: litecord
 
