@@ -8,11 +8,11 @@ jobs:
 
     services:
       postgres:
-      image: postgres:14
-      env:
-        POSTGRES_DB: postgres
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: postgres
+        image: postgres:14
+        env:
+          POSTGRES_DB: postgres
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
 
       litecord:
         image: ghcr.io/wumpyproject/litecord-docker-service
